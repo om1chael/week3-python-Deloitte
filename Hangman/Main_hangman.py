@@ -58,3 +58,4 @@ while Menu_state:
 print(text+"<--- You lost --->" + name)
 
 
+

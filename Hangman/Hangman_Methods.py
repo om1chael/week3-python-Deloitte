@@ -35,6 +35,7 @@ world_names={
 "chester": {'Date': 2017, "Text": "Tried soo hard and got soo far, but in the end you lost the hangman"},
 "louis": {'Date': 1983, "Text": "louis -'It is legal because I wish it.', this is why you were guillotined "},
 "hideki": {'Date': 1948, "Text": "hideki-'FOR THE EMPERORRR'- okay, we get it you love your senpai "}
+
 }
 
 
@@ -47,3 +48,4 @@ print("\t"+str(hangman_img) +
 "#################################### \n"+
       "\t    Welcome to HangMan \n"+
 "####### WORLD HISTORY DLC #########")
+
