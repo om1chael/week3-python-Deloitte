@@ -15,7 +15,7 @@ class Game:
 
 
     def DLC(self,name):
-        if (name in world_names.keys()):
+        if name in world_names.keys():
             info = world_names[name]
             self.Game_Response += str(info["Date"]) + "-" + info["Text"]
             return True
@@ -23,7 +23,7 @@ class Game:
     def Generate_word(self):
         return random.choice(word_list)
 
-    def Hangman_ASCII(self,index):
+    def Hangman_ASCII(self,index:str)->str:
         return HANGMANPICS[len(HANGMANPICS)-index]
 
     def Check_User(self,user_input):
