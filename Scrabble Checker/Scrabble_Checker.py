@@ -18,14 +18,13 @@ class ScrabbleChecker:
         return random.choice(string.ascii_lowercase)
 
     # fills an array with random letters
-    def letter_generation(self):
+    def letter_generation(self) -> list:
         word = []
-        for i in range(7):
+        for i in range(10):
             word.append(self.random_generation())
         return word
 
-
-    def input_check(self, word: str)-> bool:
+    def input_check(self, word: str) -> bool:
         """ Check if the word actually exists in a dict.
           Looks at the letters in the word and scores them.
           Adds ups the scores for each letter if the previous checks have been done"""
@@ -38,9 +37,12 @@ class ScrabbleChecker:
 
     # Checks the users letter with the random letters given to him
     def letter_check(self, word) -> bool:
+        list_word=" ".join(self.letters).split()
         for letter in word:
-            if letter not in self.letters:
+            if letter not in list_word:
                 return False
+            else:
+                list_word.remove(letter)
         return True
 
     # quit game if user types "quit"

@@ -1,0 +1,4 @@
+Coffee:12
+Orange-Juice:43
+Iced-Coffee:12
+Milk-Shake:10

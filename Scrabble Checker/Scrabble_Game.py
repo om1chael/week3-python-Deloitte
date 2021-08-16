@@ -1,6 +1,7 @@
 from Scrabble_Checker import ScrabbleChecker
+
 Menu = True
-Game= True
+Game = True
 while Menu:
     scrabble = ScrabbleChecker()
     scrabble.current_board()
@@ -20,5 +21,5 @@ while Menu:
             break
         print("Your current score ", scrabble.user_score)
 
-    print("Hopefully you had a fun game: your final score is " + str(scrabble.user_score) )
+    print("\n" * 5 + " Hopefully you had a fun game: your final score is " + str(scrabble.user_score))
     break
